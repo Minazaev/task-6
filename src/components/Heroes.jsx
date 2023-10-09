@@ -10,9 +10,9 @@ function Heroes() {
         "Миссис Хадсон",
         "Ирен Адлер"])
 
-const names2 = names.map(item => {
+const names2 = names.map((item, index) => {
     return(
-        <ul>
+        <ul key={index}>
             <li>{item}</li>
         </ul>
     )
